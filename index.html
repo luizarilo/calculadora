@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Online</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h1>Calculadora online</h1>
+    </div>
+    <section>
+        <div class="content">
+            <div class="content-app">
+                <input type='text' class ='campo' id ='campo' readonly value='0' />
+                <br/><br/>
+                <button onclick='writeNumber(this)' id='n8'>8</button>
+                <button onclick='writeNumber(this)' id='n9'>9</button>
+                <button onclick='writeNumber(this)' id='dec'>.</button>
+                <button onclick='removeLastNumber()' id='removeLast'>←</button>
+                <br/><br/>
+                <button onclick='writeNumber(this)' id='n4'>4</button>
+                <button onclick='writeNumber(this)' id='n5'>5</button>
+                <button onclick='writeNumber(this)' id='n6'>6</button>
+                <button onclick='writeNumber(this)' id='n7'>7</button>
+                <br/><br/>
+                <button onclick='writeNumber(this)' id='n0'>0</button>
+                <button onclick='writeNumber(this)' id='n1'>1</button>
+                <button onclick='setDecimal(this,true)' id='n2'>2</button>
+                <button onclick='writeNumber(this)' id='n3'>3</button>
+                <br/><br/>
+                <button onclick='setOperator(this)' class = 'operacoes' id='sustract'>-</button>
+                <button onclick='setOperator(this)' class = 'operacoes' id='multi'>*</button>
+                <button onclick='setOperator(this)' class = 'operacoes' id='divide'>/</button>
+                <button onclick='setOperator(this)' class = 'operacoes' id='sum'>+</button>            
+                <br/><br/>
+                <button onclick='cleartxt()' id='C'>C</button>
+                <button onclick='calculate()' id='calcular' style='width:160px'>=</button>
+            </div>
+        </div>
+    </section>
+    <div>
+        <p>
+            Para utilizar a calculadora, basta inserir as operações que deseja realizar, podendo inserir mais de uma operação na mesma linha e ao fim, apertar o IGUAL. Caso deseje apagar algo, aperte em <strong>←</strong> e caso queira apagar tudo de uma vez, aperte em <strong>C</strong>.
+        </p>
+    </div>
+</body>
+
+</html>
